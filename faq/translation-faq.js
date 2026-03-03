@@ -2,6 +2,7 @@ const currentYear = new Date().getFullYear();
 
 const translations = {
   pt: {
+    page_title: "Autikids | Central de Ajuda",
     btn_back: "Voltar",
     faq_h1: "Central de Ajuda",
     faq_subtitle: "Encontre respostas rápidas para as dúvidas mais comuns 💛",
@@ -25,6 +26,7 @@ const translations = {
     footer_rights: `© ${currentYear} Autikids | Todos os direitos reservados`
   },
   en: {
+    page_title: "Autikids | Help Center",
     btn_back: "Back",
     faq_h1: "Help Center",
     faq_subtitle: "Find quick answers to common questions 💛",
@@ -49,6 +51,7 @@ const translations = {
     footer_rights: `© ${currentYear} Autikids | All rights reserved`
   },
   es: {
+    page_title: "Autikids | Centro de Ayuda",
     btn_back: "Volver",
     faq_h1: "Centro de Ayuda",
     faq_subtitle: "Encuentra respuestas rápidas a preguntas comunes 💛",
@@ -75,6 +78,10 @@ const translations = {
 
 function changeLanguage(lang) {
   if (!translations[lang]) lang = 'pt';
+
+  if (translations[lang]['page_title']) {
+    document.title = translations[lang]['page_title'];
+  }
 
   const elements = document.querySelectorAll('[data-i18n]');
 

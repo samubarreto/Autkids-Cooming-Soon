@@ -7,6 +7,7 @@ const currentYear = new Date().getFullYear();
 const translations = {
   // --- PORTUGUÊS (Padrão) ---
   'pt': {
+    'page_title': 'Autikids',
     'hero_title': '<span class="highlight">Comunicar, aprender</span> e se<br><span class="highlight">divertir</span> — tudo em um <br>aplicativo seguro!',
     'hero_desc': 'Porque criança merece se comunicar com alegria — e nós estamos aqui para tornar essa experiência única',
     'btn_download': 'Download Gratuito',
@@ -54,6 +55,7 @@ const translations = {
 
   // --- INGLÊS ---
   'en': {
+    'page_title': 'Autikids',
     'hero_title': '<span class="highlight">Communicate, learn</span> and have<br><span class="highlight">fun</span> — all in one <br>safe app!',
     'hero_desc': 'Because every child deserves to communicate with joy — and we are here to make this experience unique.',
     'btn_download': 'Download for Free',
@@ -101,6 +103,7 @@ const translations = {
 
   // --- ESPANHOL ---
   'es': {
+    'page_title': 'Autikids',
     'hero_title': '<span class="highlight">Comunicar, aprender</span> y <br><span class="highlight">divertirse</span> — ¡todo en una <br>aplicación segura!',
     'hero_desc': 'Porque los niños merecen comunicarse con alegría — y estamos aquí para hacer de esta experiencia algo único.',
     'btn_download': 'Descarga Gratuita',
@@ -239,7 +242,12 @@ function changeLanguage(lang) {
   // 1. Salva a preferência do usuário no navegador
   localStorage.setItem('autikids-language', lang);
 
-  // 2. Atualiza os textos na página
+  // 2. Atualiza o título da página
+  if (translations[lang] && translations[lang]['page_title']) {
+    document.title = translations[lang]['page_title'];
+  }
+
+  // 3. Atualiza os textos na página
   const elements = document.querySelectorAll('[data-i18n]');
   
   elements.forEach(element => {

@@ -3,6 +3,7 @@ const currentYear = new Date().getFullYear();
 
 const translations = {
   pt: {
+    page_title: "Autikids | Termos de Uso",
     btn_back: "Voltar",
     terms_title: "Termos de Uso",
     last_update: "Última atualização:",
@@ -23,6 +24,7 @@ const translations = {
     footer_rights: `© ${currentYear} Autikids | Todos os direitos reservados`
   },
   en: {
+    page_title: "Autikids | Terms of Use",
     btn_back: "Back",
     terms_title: "Terms of Use",
     last_update: "Last update:",
@@ -43,6 +45,7 @@ const translations = {
     footer_rights: `© ${currentYear} Autikids | All rights reserved`
   },
   es: {
+    page_title: "Autikids | Términos de Uso",
     btn_back: "Volver",
     terms_title: "Términos de Uso",
     last_update: "Última actualización:",
@@ -66,6 +69,10 @@ const translations = {
 
 function changeLanguage(lang) {
   if (!translations[lang]) lang = 'pt';
+
+  if (translations[lang]['page_title']) {
+    document.title = translations[lang]['page_title'];
+  }
 
   const elements = document.querySelectorAll('[data-i18n]');
 
