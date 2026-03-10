@@ -3,25 +3,63 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Termos de Uso - Autikids">
+  <meta name="description" content="Termos de Uso Autikids">
   <meta name="theme-color" content="#FFC107">
   <title>Autikids | Termos de Uso</title>
   <link rel="icon" href="../assets/favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles-terms.css" />
 </head>
 
 <body>
-  <main class="terms-container">
-    <a href="../index.html" class="back-btn">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M19 12H5M12 19l-7-7 7-7"/>
-      </svg>
-      <span data-i18n="btn_back"></span>
-    </a>
 
-    <h1 data-i18n="terms_title"></h1>
-    <p class="last-update"><span data-i18n="last_update"></span> 21/11/2025</p>
+  <!-- HEADER COM SELETOR DE IDIOMA -->
+  <header class="top-flags">
+    <div class="language-selector">
+
+      <a href="../index.html" class="back-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <span data-i18n="btn_back">Voltar</span>
+      </a>
+
+      <div style="position: relative;">
+        <button class="language-trigger" id="langTrigger">
+          <img id="currentFlag" src="../assets/brasil.png" alt="Idioma atual">
+          <span id="currentLang">Português</span>
+          <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M4.5 6L8 9.5L11.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </button>
+
+        <div class="language-dropdown" id="langDropdown">
+          <div class="language-grid">
+            <button class="language-option" data-lang="pt" data-name="Português">
+              <img src="../assets/brasil.png" alt="Brasil">
+              <span>Português</span>
+            </button>
+            <button class="language-option" data-lang="en" data-name="English">
+              <img src="../assets/eua.png" alt="Estados Unidos">
+              <span>English</span>
+            </button>
+            <button class="language-option" data-lang="es" data-name="Español">
+              <img src="../assets/espanha.png" alt="Espanha">
+              <span>Español</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <div class="terms-container">
+    <h1 data-i18n="terms_title">Termos de Uso</h1>
+    <p class="last-update"><span data-i18n="last_update">Última atualização:</span> 01/06/2025</p>
 
     <div class="legal-content">
       <section>
@@ -53,7 +91,7 @@
         <p data-i18n="sec_7_text"></p>
       </section>
     </div>
-  </main>
+  </div>
 
   <footer class="terms-footer">
     <p data-i18n="footer_rights"></p>
@@ -63,4 +101,3 @@
   <script src="terms.js"></script>
 </body>
 </html>
-

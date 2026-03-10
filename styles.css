@@ -661,50 +661,180 @@ section {
 }
 
 /* ========================================
-   MÍDIA
+   MÍDIA — CARROSSEL
 ======================================== */
 .media {
   background: var(--bg-white);
   padding: 80px 20px;
 }
 
-.media-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
+.media-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
 }
 
-.media-item {
-  text-align: center;
+.media-carousel-track-container {
+  overflow: hidden;
+  flex: 1;
+  border-radius: 20px;
 }
 
-.media-item a {
+.media-carousel-track {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* Card */
+.media-card {
+  flex: 0 0 calc((100% - 48px) / 3); /* 3 visíveis no desktop */
+  min-width: 0;
+}
+
+.media-card a {
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
-.media-thumb {
-  background: var(--bg-white);
-  border-radius: 25%;
+.media-card .media-thumb {
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 20px;
   overflow: hidden;
-  margin: 0 auto 20px;
-  /* box-shadow: var(--shadow); */
-  width: 300px;
-  height: 280px;
+  width: 100%;
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: var(--transition);
+  margin-bottom: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.media-item:hover .media-thumb {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+.media-card .media-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
-.media-item p {
+.media-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 195, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+.media-card:hover .media-thumb {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.media-card:hover .media-thumb img {
+  transform: scale(1.05);
+}
+
+.media-card:hover .media-overlay {
+  opacity: 1;
+}
+
+.media-card p {
   font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+/* Botões de navegação */
+.media-carousel-btn {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary-yellow);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(255,195,0,0.35);
+  transition: all 0.3s ease;
+}
+
+.media-carousel-btn:hover {
+  background: #e6ac00;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255,195,0,0.5);
+}
+
+.media-carousel-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.media-carousel-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Dots */
+.media-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.media-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 195, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.media-dot.active {
+  background: var(--primary-yellow);
+  width: 28px;
+  border-radius: 5px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .media-card {
+    flex: 0 0 calc((100% - 24px) / 2); /* 2 visíveis no tablet */
+  }
+}
+
+@media (max-width: 580px) {
+  .media-card {
+    flex: 0 0 100%; /* 1 visível no mobile */
+  }
+
+  .media-carousel-track {
+    gap: 16px;
+  }
+
+  .media-card .media-thumb {
+    height: 200px;
+  }
 }
 
 /* ========================================
@@ -1075,4 +1205,18 @@ section {
     font-size: 14px;
     text-align: center;
   }
+}
+.stores {
+  display: flex;
+}
+
+.store-badge {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.store-badge img {
+  height: 150px;
+  width: auto;
 }

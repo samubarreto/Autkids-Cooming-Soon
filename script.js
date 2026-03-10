@@ -334,3 +334,83 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
 });
+/* ============================================================
+    6. CARROSSEL DE MÍDIA
+============================================================ */
+(function() {
+  const track = document.querySelector('.media-carousel-track');
+  const prevBtn = document.querySelector('.media-prev-btn');
+  const nextBtn = document.querySelector('.media-next-btn');
+  const dotsContainer = document.querySelector('.media-carousel-dots');
+
+  if (!track) return;
+
+  const cards = Array.from(track.querySelectorAll('.media-card'));
+  let currentIndex = 0;
+
+  function getVisible() {
+    if (window.innerWidth <= 580) return 1;
+    if (window.innerWidth <= 900) return 2;
+    return 3;
+  }
+
+  function maxIndex() {
+    return Math.max(0, cards.length - getVisible());
+  }
+
+  function getCardWidth() {
+    const gap = window.innerWidth <= 580 ? 16 : 24;
+    return cards[0].offsetWidth + gap;
+  }
+
+  function updateTrack() {
+    const offset = currentIndex * getCardWidth();
+    track.style.transform = `translateX(-${offset}px)`;
+    updateDots();
+    updateButtons();
+  }
+
+  function updateButtons() {
+    if (prevBtn) prevBtn.disabled = currentIndex === 0;
+    if (nextBtn) nextBtn.disabled = currentIndex >= maxIndex();
+  }
+
+  function buildDots() {
+    dotsContainer.innerHTML = '';
+    const total = maxIndex() + 1;
+    for (let i = 0; i < total; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'media-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Ir para item ${i + 1}`);
+      dot.addEventListener('click', () => { currentIndex = i; updateTrack(); });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function updateDots() {
+    const dots = dotsContainer.querySelectorAll('.media-dot');
+    dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
+  }
+
+  if (prevBtn) prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) { currentIndex--; updateTrack(); }
+  });
+
+  if (nextBtn) nextBtn.addEventListener('click', () => {
+    if (currentIndex < maxIndex()) { currentIndex++; updateTrack(); }
+  });
+
+  // Recalcula ao redimensionar
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      currentIndex = Math.min(currentIndex, maxIndex());
+      buildDots();
+      updateTrack();
+    }, 150);
+  });
+
+  buildDots();
+  updateTrack();
+})();

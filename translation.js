@@ -10,15 +10,15 @@ const translations = {
     'page_title': 'Autikids',
     'hero_title': '<span class="highlight">Comunicar, aprender</span> e se<br><span class="highlight">divertir</span> — tudo em um <br>aplicativo seguro!',
     'hero_desc': 'Porque criança merece se comunicar com alegria — e nós estamos aqui para tornar essa experiência única',
-    'btn_download': 'Em Breve Disponível',
+    'btn_download': 'Download em breve',
     
     'section_why': 'Por que Autikids?',
-    'feature_1_title': 'Totalmente personalizável',
-    'feature_1_desc': 'O app se molda ao ritmo, interesses e necessidades de cada pequeno.',
+    'feature_1_title': 'Em Breve - Totalmente personalizável',
+    'feature_1_desc': 'O app será totalmente adaptável ao ritmo, interesses e necessidades de cada pequeno.',
     'feature_2_title': 'Ambiente Seguro',
     'feature_2_desc': 'Aqui prezamos pela experiência segura da criança. Por isso, nosso app é 100% livre de anúncios para os pequenos.',
-    'feature_3_title': 'Facilita a comunicação',
-    'feature_3_desc': 'Recursos de áudio e cards intuitivos para uma comunicação sem barreiras.',
+    'feature_3_title': 'Em Breve - Cadastro de Perfis Múltiplos',
+    'feature_3_desc': 'Cada criança terá seu espaço, suas preferências e seu próprio perfil.',
     'feature_4_title': 'Parceria entre casa e escola',
     'feature_4_desc': 'Conecta pais e educadores para alinhar o desenvolvimento da criança.',
 
@@ -49,7 +49,7 @@ const translations = {
     'footer_terms': 'Termos de Uso',
     'footer_privacy': 'Política de Privacidade',
     'footer_cookies': 'Política de Cookies',
-    'footer_social': 'Nossas redes sociais:',
+    'footer_social': 'Entre em contato conosco:',
     'footer_rights': `© ${currentYear} Autikids | Todos os direitos reservados`
   },
 
@@ -58,15 +58,15 @@ const translations = {
     'page_title': 'Autikids',
     'hero_title': '<span class="highlight">Communicate, learn</span> and have<br><span class="highlight">fun</span> — all in one <br>safe app!',
     'hero_desc': 'Because every child deserves to communicate with joy — and we are here to make this experience unique.',
-    'btn_download': 'Coming Soon',
+    'btn_download': 'Download Coming Soon',
     
     'section_why': 'Why Autikids?',
-    'feature_1_title': 'Fully Customizable',
-    'feature_1_desc': 'The app adapts to the rhythm, interests, and needs of each little one.',
+    'feature_1_title': 'Coming Soon - Fully Customizable',
+    'feature_1_desc': 'The app will be fully adaptable to each child\'s rhythm, interests, and needs.',
     'feature_2_title': 'Safe Environment',
     'feature_2_desc': 'We value the safe experience of children. That\'s why our app is 100% ad-free for kids.',
-    'feature_3_title': 'Facilitates Communication',
-    'feature_3_desc': 'Audio resources and intuitive cards for barrier-free communication.',
+    'feature_3_title': 'Coming Soon - Multiple Profiles',
+    'feature_3_desc': 'Each child will have their own space, preferences, and profile.',
     'feature_4_title': 'Home & School Partnership',
     'feature_4_desc': 'Connects parents and educators to align the child\'s development.',
     
@@ -97,7 +97,7 @@ const translations = {
     'footer_terms': 'Terms of Use',
     'footer_privacy': 'Privacy Policy',
     'footer_cookies': 'Cookie Policy',
-    'footer_social': 'Our social networks:',
+    'footer_social': 'Contact Us:',
     'footer_rights': `© ${currentYear} Autikids | All rights reserved`
   },
 
@@ -106,15 +106,15 @@ const translations = {
     'page_title': 'Autikids',
     'hero_title': '<span class="highlight">Comunicar, aprender</span> y <br><span class="highlight">divertirse</span> — ¡todo en una <br>aplicación segura!',
     'hero_desc': 'Porque los niños merecen comunicarse con alegría — y estamos aquí para hacer de esta experiencia algo único.',
-    'btn_download': 'Próximamente Disponible',
+    'btn_download': 'Descarga En Breve',
     
     'section_why': '¿Por qué Autikids?',
-    'feature_1_title': 'Totalmente personalizable',
-    'feature_1_desc': 'La aplicación se adapta al ritmo, intereses y necesidades de cada pequeño.',
+    'feature_1_title': 'Próximamente - Totalmente personalizable',
+    'feature_1_desc': 'La aplicación será totalmente adaptable al ritmo, intereses y necesidades de cada niño.',
     'feature_2_title': 'Entorno Seguro',
     'feature_2_desc': 'Aquí valoramos la experiencia segura del niño. Por eso, nuestra app es 100% libre de anuncios para los pequeños.',
-    'feature_3_title': 'Facilita la comunicación',
-    'feature_3_desc': 'Recursos de audio y tarjetas intuitivas para una comunicación sin barreras.',
+    'feature_3_title': 'Próximamente - Perfiles Múltiples',
+    'feature_3_desc': 'Cada niño tendrá su propio espacio, preferencias y perfil.',
     'feature_4_title': 'Alianza casa y escuela',
     'feature_4_desc': 'Conecta a padres y educadores para alinear el desarrollo del niño.',
 
@@ -143,7 +143,7 @@ const translations = {
     'footer_terms': 'Términos de Uso',
     'footer_privacy': 'Política de Privacidad',
     'footer_cookies': 'Política de Cookies',
-    'footer_social': 'Nuestras redes sociales:',
+    'footer_social': 'Contáctanos:',
     'footer_rights': `© ${currentYear} Autikids | Todos los derechos reservados`
   }
 };

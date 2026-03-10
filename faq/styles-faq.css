@@ -1,57 +1,201 @@
-body {
+/* ========================================
+   RESET BASE
+======================================== */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-yellow: #FFC300;
+  --secondary-yellow: #fce38a;
+  --text-dark: #212121;
+  --text-gray: #424242;
+  --bg-white: #FFFFFF;
+}
+
+body {
   font-family: "Poppins", sans-serif;
   background: #fce38a;
   color: #333;
 }
 
-/* Header */
-.faq-header {
-  text-align: center;
-  padding: 40px 20px;
-}
 /* ========================================
-   BOTÃO VOLTAR (Novo)
+   HEADER COM SELETOR DE IDIOMA
 ======================================== */
+.top-flags {
+  background: #ffffff;
+  padding: 0;
+  border-bottom: 2px solid #fbd65c;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.language-selector {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* Botão Voltar */
 .back-btn {
-    position: absolute; /* Fixa no canto da tela */
-    top: 20px;
-    left: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    transition: color 0.3s ease;
-    z-index: 10; /* Garante que fique acima de tudo */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
 }
 
 .back-btn:hover {
-    color: #ffc300; /* Amarelo da marca */
+  color: var(--primary-yellow);
 }
 
-/* Ajuste para celular: Mostra só a setinha para economizar espaço */
-@media (max-width: 600px) {
-    .back-btn span {
-        display: none;
-    }
-    .back-btn {
-        top: 15px;
-        left: 15px;
-    }
+/* Trigger do idioma */
+.language-trigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background: var(--bg-white);
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.language-trigger:hover {
+  border-color: var(--primary-yellow);
+  box-shadow: 0 4px 12px rgba(255, 195, 0, 0.15);
+}
+
+.language-trigger img {
+  width: 28px;
+  height: 20px;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.language-trigger .chevron {
+  transition: transform 0.3s ease;
+}
+
+.language-trigger.active .chevron {
+  transform: rotate(180deg);
+}
+
+/* Dropdown */
+.language-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  padding: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  min-width: 280px;
+  z-index: 1001;
+}
+
+.language-dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.language-option:hover {
+  border-color: var(--primary-yellow);
+  background: #fffbf0;
+  transform: translateY(-2px);
+}
+
+.language-option.active {
+  border-color: var(--primary-yellow);
+  background: var(--secondary-yellow);
+}
+
+.language-option img {
+  width: 28px;
+  height: 20px;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   FAQ HEADER
+======================================== */
+.faq-header {
+  text-align: center;
+  padding: 50px 20px 30px;
 }
 
 .faq-logo {
-  width: 250px;
-  margin-bottom: 15px;
+  width: 220px;
+  margin: 0 auto 20px;
 }
 
+.faq-header h1 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.faq-header p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-gray);
+}
+
+/* ========================================
+   FAQ CONTAINER
+======================================== */
 .faq-container {
   max-width: 900px;
-  margin: auto;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
 }
 
 .faq-section {
@@ -59,15 +203,17 @@ body {
 }
 
 .faq-section h2 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 20px;
+  color: var(--text-dark);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-left: 4px;
 }
 
 /* FAQ item */
 .faq-item {
   background: white;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-bottom: 10px;
   border: 1px solid #ffe082;
   overflow: hidden;
@@ -76,52 +222,90 @@ body {
 .faq-question {
   width: 100%;
   text-align: left;
-  padding: 18px;
-  background: #ffc300;
+  padding: 16px 50px 16px 18px;
+  background: var(--primary-yellow);
   border: none;
   outline: none;
-  font-size: 17px;
+  font-size: 0.97rem;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   position: relative;
+  color: var(--text-dark);
+  transition: background 0.2s ease;
+}
+
+.faq-question:hover {
+  background: #e6ac00;
 }
 
 .faq-question::after {
   content: "+";
   position: absolute;
   right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 22px;
-  transition: 0.3s;
+  font-weight: 400;
+  transition: transform 0.3s ease;
 }
 
-.faq-item.active .faq-question::after {
+.faq-question.active::after {
   content: "−";
 }
 
+/* ========================================
+   CORREÇÃO DO ACORDEÃO
+======================================== */
 .faq-answer {
   max-height: 0;
   overflow: hidden;
   padding: 0 18px;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.35s ease, padding-top 0.35s ease, padding-bottom 0.35s ease;
 }
 
 .faq-answer p {
-  padding: 15px 0;
-  line-height: 1.6;
+  padding: 14px 0;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  color: var(--text-gray);
 }
 
-/* Footer */
+.faq-answer a {
+  color: #b8860b;
+  font-weight: 600;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
 .faq-footer {
   text-align: center;
-  padding: 30px 0;
-  background: #ffc300;
-  margin-top: 40px;
-  font-weight: 500;
+  padding: 24px 20px;
+  background: var(--primary-yellow);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--bg-white);
 }
 
-/* Responsividade */
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
 @media (max-width: 600px) {
+  .back-btn span {
+    display: none;
+  }
+
+  .language-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .language-dropdown {
+    min-width: 240px;
+    max-width: calc(100vw - 40px);
+  }
+
   .faq-question {
-    font-size: 15px;
+    font-size: 0.9rem;
   }
 }

@@ -1,4 +1,3 @@
-
 const currentYear = new Date().getFullYear();
 
 const translations = {
@@ -20,7 +19,7 @@ const translations = {
     sec_6_title: "6. Alterações nos Termos",
     sec_6_text: "Reservamo-nos o direito de modificar estes termos a qualquer momento. As alterações entrarão em vigor assim que publicadas nesta página ou dentro do aplicativo.",
     sec_7_title: "7. Contato",
-    sec_7_text: "Para dúvidas sobre estes termos, entre em contato através do e-mail: support@autikids.app",
+    sec_7_text: "Para dúvidas sobre estes termos, entre em contato através do e-mail: <strong><a href='mailto:support@autikids.app'>support@autikids.app</a></strong>",
     footer_rights: `© ${currentYear} Autikids | Todos os direitos reservados`
   },
   en: {
@@ -41,7 +40,7 @@ const translations = {
     sec_6_title: "6. Changes to Terms",
     sec_6_text: "We reserve the right to modify these terms at any time. Changes will take effect as soon as they are published on this page or within the app.",
     sec_7_title: "7. Contact",
-    sec_7_text: "For questions regarding these terms, please contact us via email: support@autikids.app",
+    sec_7_text: "For questions regarding these terms, please contact us via email: <strong><a href='mailto:support@autikids.app'>support@autikids.app</a></strong>",
     footer_rights: `© ${currentYear} Autikids | All rights reserved`
   },
   es: {
@@ -62,7 +61,7 @@ const translations = {
     sec_6_title: "6. Cambios en los Términos",
     sec_6_text: "Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios entrarán en vigor tan pronto como se publiquen en esta página o dentro de la aplicación.",
     sec_7_title: "7. Contacto",
-    sec_7_text: "Para dudas sobre estos términos, contáctenos a través del correo: support@autikids.app",
+    sec_7_text: "Para dudas sobre estos términos, contáctenos a través del correo: <strong><a href='mailto:support@autikids.app'>support@autikids.app</a></strong>",
     footer_rights: `© ${currentYear} Autikids | Todos los derechos reservados`
   }
 };
@@ -83,4 +82,3 @@ function changeLanguage(lang) {
     }
   });
 }
-
