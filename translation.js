@@ -10,7 +10,7 @@ const translations = {
     'page_title': 'Autikids',
     'hero_title': '<span class="highlight">Comunicar, aprender</span> e se<br><span class="highlight">divertir</span> — tudo em um <br>aplicativo seguro!',
     'hero_desc': 'Porque criança merece se comunicar com alegria — e nós estamos aqui para tornar essa experiência única',
-    'btn_download': 'Download Gratuito',
+    'btn_download': 'Download em breve',
     
     'section_why': 'Por que Autikids?',
     'feature_1_title': 'Em Breve - Totalmente personalizável',
@@ -58,7 +58,7 @@ const translations = {
     'page_title': 'Autikids',
     'hero_title': '<span class="highlight">Communicate, learn</span> and have<br><span class="highlight">fun</span> — all in one <br>safe app!',
     'hero_desc': 'Because every child deserves to communicate with joy — and we are here to make this experience unique.',
-    'btn_download': 'Download for Free',
+    'btn_download': 'Download Coming Soon',
     
     'section_why': 'Why Autikids?',
     'feature_1_title': 'Coming Soon - Fully Customizable',
@@ -106,7 +106,7 @@ const translations = {
     'page_title': 'Autikids',
     'hero_title': '<span class="highlight">Comunicar, aprender</span> y <br><span class="highlight">divertirse</span> — ¡todo en una <br>aplicación segura!',
     'hero_desc': 'Porque los niños merecen comunicarse con alegría — y estamos aquí para hacer de esta experiencia algo único.',
-    'btn_download': 'Descarga Gratuita',
+    'btn_download': 'Descarga En Breve',
     
     'section_why': '¿Por qué Autikids?',
     'feature_1_title': 'Próximamente - Totalmente personalizable',

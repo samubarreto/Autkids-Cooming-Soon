@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (langTrigger && langDropdown) {
 
     const languages = {
-      pt: { name: 'Português', flag: '../assets/brasil.png' },
-      en: { name: 'English',   flag: '../assets/eua.png'    },
-      es: { name: 'Español',   flag: '../assets/espanha.png'}
+      pt: { name: 'Português', flag: '../assets/brasil.png'   },
+      en: { name: 'English',   flag: '../assets/eua.png'      },
+      es: { name: 'Español',   flag: '../assets/espanha.png'  }
     };
 
     function applyLanguage(lang) {
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ============================================================
-      3. ACORDEÃO (PERGUNTAS E RESPOSTAS)
+      3. ACORDEÃO (PERGUNTAS E RESPOSTAS) — CORRIGIDO
   ============================================================ */
   const questions = document.querySelectorAll('.faq-question');
 
@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const ans = q.nextElementSibling;
         ans.style.maxHeight = null;
         ans.style.paddingTop = '0';
+        ans.style.paddingBottom = '0'; // CORRIGIDO: remove padding inferior também
       });
 
       // Abre o clicado (se não estava aberto)
@@ -99,6 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
         question.classList.add('active');
         const answer = question.nextElementSibling;
         answer.style.maxHeight = answer.scrollHeight + 'px';
+        answer.style.paddingTop = '';    // restaura padding do CSS
+        answer.style.paddingBottom = ''; // restaura padding do CSS
       }
     });
   });

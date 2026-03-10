@@ -254,11 +254,14 @@ body {
   content: "−";
 }
 
+/* ========================================
+   CORREÇÃO DO ACORDEÃO
+======================================== */
 .faq-answer {
   max-height: 0;
   overflow: hidden;
   padding: 0 18px;
-  transition: max-height 0.35s ease, padding 0.35s ease;
+  transition: max-height 0.35s ease, padding-top 0.35s ease, padding-bottom 0.35s ease;
 }
 
 .faq-answer p {
