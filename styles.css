@@ -297,9 +297,10 @@ a:focus {
 }
 
 .btn-icon {
-  width: 70px;
+  width: 60px;
   height: 60px;
-  object-fit: contain;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .btn-text {
@@ -309,12 +310,12 @@ a:focus {
   text-align: left;
 }
 
-.app-name {
+.com-name {
   font-size: 0.9rem;
   font-weight: 700;
 }
 
-.app-cta {
+.com-cta {
   font-size: 1.05rem;
   font-weight: 700;
 }
@@ -330,7 +331,7 @@ a:focus {
 
 .logo-card {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,7 +340,7 @@ a:focus {
 .logo-card img {
   filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.12));
   width: 100%;
-  max-width: 350px;
+  max-width: 250px;
   height: auto;
   object-fit: contain;
 }
@@ -362,7 +363,7 @@ section {
 }
 
 /* ========================================
-   POR QUE AUTIKIDS
+   POR QUE AUTKIDS
 ======================================== */
 .why {
   background: var(--bg-white);
@@ -429,7 +430,7 @@ section {
 }
 
 /* ========================================
-   PRICING / AUTIKIDS ESTÁ CHEGANDO
+   PRICING / AUTKIDS ESTÁ CHEGANDO
 ======================================== */
 .pricing {
   background: linear-gradient(135deg, #FFE082 0%, #FFC107 100%);
@@ -450,7 +451,7 @@ section {
 }
 
 
-/* Badge "O Autikids está chegando!" */
+/* Badge "O Autkids está chegando!" */
 .coming-soon-badge {
   background: #FFC107;
   color: var(--bg-white);
@@ -951,7 +952,7 @@ section {
 }
 
 .brand .logo {
-  width: 200px;
+  width: 150px;
   height: auto;
   margin: 0;
 }

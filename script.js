@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
       1. CARREGAR IDIOMA SALVO (TODAS AS PÁGINAS)
   ============================================================ */
   function loadSavedLanguage() {
-    const savedLang = localStorage.getItem('autikids-language') || 'pt';
+    const savedLang = localStorage.getItem('autkids-language') || 'pt';
     
     // Atualizar atributo lang do HTML
     document.documentElement.lang = savedLang;
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       
       // Salvar no localStorage
-      localStorage.setItem('autikids-language', lang);
+      localStorage.setItem('autkids-language', lang);
       
       // Atualizar atributo lang do HTML
       document.documentElement.lang = lang;
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Carregar idioma salvo no dropdown
-    const savedLang = localStorage.getItem('autikids-language') || 'pt';
+    const savedLang = localStorage.getItem('autkids-language') || 'pt';
     applyLanguage(savedLang);
 
     // Toggle dropdown
@@ -383,7 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
       dot.className = 'media-dot' + (i === 0 ? ' active' : '');
       dot.setAttribute('aria-label', `Ir para item ${i + 1}`);
       dot.addEventListener('click', () => { currentIndex = i; updateTrack(); });
-      dotsContainer.appendChild(dot);
+      dotsContainer.comendChild(dot);
     }
   }
 

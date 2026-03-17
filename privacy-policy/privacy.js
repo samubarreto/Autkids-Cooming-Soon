@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
       1. CARREGAR IDIOMA SALVO
   ============================================================ */
   function loadSavedLanguage() {
-    const savedLang = localStorage.getItem('autikids-language') || 'pt';
+    const savedLang = localStorage.getItem('autkids-language') || 'pt';
     document.documentElement.lang = savedLang;
     if (typeof changeLanguage === 'function') {
       changeLanguage(savedLang);
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         opt.classList.toggle('active', opt.dataset.lang === lang);
       });
 
-      localStorage.setItem('autikids-language', lang);
+      localStorage.setItem('autkids-language', lang);
       document.documentElement.lang = lang;
 
       if (typeof changeLanguage === 'function') {
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    const savedLang = localStorage.getItem('autikids-language') || 'pt';
+    const savedLang = localStorage.getItem('autkids-language') || 'pt';
     applyLanguage(savedLang);
 
     langTrigger.addEventListener('click', (e) => {

@@ -7,12 +7,12 @@ const currentYear = new Date().getFullYear();
 const translations = {
   // --- PORTUGUÊS (Padrão) ---
   'pt': {
-    'page_title': 'Autikids',
+    'page_title': 'Autkids',
     'hero_title': '<span class="highlight">Comunicar, aprender</span> e se<br><span class="highlight">divertir</span> — tudo em um <br>aplicativo seguro!',
     'hero_desc': 'Porque criança merece se comunicar com alegria — e nós estamos aqui para tornar essa experiência única',
     'btn_download': 'Download em breve',
     
-    'section_why': 'Por que Autikids?',
+    'section_why': 'Por que Autkids?',
     'feature_1_title': 'Em Breve - Totalmente personalizável',
     'feature_1_desc': 'O app será totalmente adaptável ao ritmo, interesses e necessidades de cada pequeno.',
     'feature_2_title': 'Ambiente Seguro',
@@ -24,17 +24,18 @@ const translations = {
 
 
 
-    '_badge': 'O Autikids está chegando!',
+    '_badge': 'O Autkids está chegando!',
     'pricing_title': 'Nossos personagens são desenhados para serem amigáveis e acolhedores, criando uma experiência inclusiva para todas as crianças',
 
     
 
-    'section_media': '#Autikids na mídia',
+    'section_media': '#Autkids na mídia',
     'media_1': 'Destaque em Evento',
     'media_2': 'Reconhecimento Científico',
     'media_3': 'Projeto Premiado',
+    'media_4': 'Visita ao Espaço Potencial',
 
-    'section_testi': 'Veja como o Autikids está fazendo a diferença 💛',
+    'section_testi': 'Veja como o Autkids está fazendo a diferença 💛',
     'testi_1': '"O app nos ajudou a estabelecer uma rotina educacional em casa. Meu filho melhorou muito."',
     'testi_2': '"Muitas atividades com reforço positivo — crianças adoram."',
     'testi_3': '"Ferramenta excelente para professores e familiares."',
@@ -50,17 +51,17 @@ const translations = {
     'footer_privacy': 'Política de Privacidade',
     'footer_cookies': 'Política de Cookies',
     'footer_social': 'Entre em contato conosco:',
-    'footer_rights': `© ${currentYear} Autikids | Todos os direitos reservados`
+    'footer_rights': `© ${currentYear} Autkids | Todos os direitos reservados`
   },
 
   // --- INGLÊS ---
   'en': {
-    'page_title': 'Autikids',
+    'page_title': 'Autkids',
     'hero_title': '<span class="highlight">Communicate, learn</span> and have<br><span class="highlight">fun</span> — all in one <br>safe app!',
     'hero_desc': 'Because every child deserves to communicate with joy — and we are here to make this experience unique.',
     'btn_download': 'Download Coming Soon',
     
-    'section_why': 'Why Autikids?',
+    'section_why': 'Why Autkids?',
     'feature_1_title': 'Coming Soon - Fully Customizable',
     'feature_1_desc': 'The app will be fully adaptable to each child\'s rhythm, interests, and needs.',
     'feature_2_title': 'Safe Environment',
@@ -72,17 +73,18 @@ const translations = {
     
 
 
-    'section_media': '#Autikids in the Media',
+    'section_media': '#Autkids in the Media',
     'media_1': 'Event Highlight',
     'media_2': 'Scientific Recognition',
     'media_3': 'Awarded Project',
+    'media_4': 'Visit to the Espaço Potencial',
 
-    '_badge': ' Autikids is coming!',
+    '_badge': ' Autkids is coming!',
     'pricing_title': 'Our characters are designed to be friendly and welcoming, creating an inclusive experience for all children',
     
 
 
-    'section_testi': 'See how Autikids is making a difference 💛',
+    'section_testi': 'See how Autkids is making a difference 💛',
     'testi_1': '"The app helped us establish an educational routine at home. My son has improved a lot."',
     'testi_2': '"Lots of positive reinforcement activities — kids love it."',
     'testi_3': '"Excellent tool for teachers and family members."',
@@ -98,17 +100,17 @@ const translations = {
     'footer_privacy': 'Privacy Policy',
     'footer_cookies': 'Cookie Policy',
     'footer_social': 'Contact Us:',
-    'footer_rights': `© ${currentYear} Autikids | All rights reserved`
+    'footer_rights': `© ${currentYear} Autkids | All rights reserved`
   },
 
   // --- ESPANHOL ---
   'es': {
-    'page_title': 'Autikids',
+    'page_title': 'Autkids',
     'hero_title': '<span class="highlight">Comunicar, aprender</span> y <br><span class="highlight">divertirse</span> — ¡todo en una <br>aplicación segura!',
     'hero_desc': 'Porque los niños merecen comunicarse con alegría — y estamos aquí para hacer de esta experiencia algo único.',
     'btn_download': 'Descarga En Breve',
     
-    'section_why': '¿Por qué Autikids?',
+    'section_why': '¿Por qué Autkids?',
     'feature_1_title': 'Próximamente - Totalmente personalizable',
     'feature_1_desc': 'La aplicación será totalmente adaptable al ritmo, intereses y necesidades de cada niño.',
     'feature_2_title': 'Entorno Seguro',
@@ -120,15 +122,16 @@ const translations = {
 
     
 
-    'section_media': '#Autikids en los medios',
+    'section_media': '#Autkids en los medios',
     'media_1': 'Destacado en Evento',
     'media_2': 'Reconocimiento Científico',
     'media_3': 'Proyecto Premiado',
+    'media_4': 'Visita al Espaço Potencial',
 
-    '_badge': ' Autikids llegará pronto!',
+    '_badge': ' Autkids llegará pronto!',
     'pricing_title': 'Nuestros personajes están diseñados para ser amigables y acogedores, creando una experiencia inclusiva para todos los niños',
 
-    'section_testi': 'Mira cómo Autikids está haciendo la diferencia 💛',
+    'section_testi': 'Mira cómo Autkids está haciendo la diferencia 💛',
     'testi_1': '"La app nos ayudó a establecer una rutina educativa en casa. Mi hijo mejoró mucho."',
     'testi_2': '"Muchas actividades con refuerzo positivo — a los niños les encanta."',
     'testi_3': '"Herramienta excelente para profesores y familiares."',
@@ -144,7 +147,7 @@ const translations = {
     'footer_privacy': 'Política de Privacidad',
     'footer_cookies': 'Política de Cookies',
     'footer_social': 'Contáctanos:',
-    'footer_rights': `© ${currentYear} Autikids | Todos los derechos reservados`
+    'footer_rights': `© ${currentYear} Autkids | Todos los derechos reservados`
   }
 };
 
@@ -194,7 +197,7 @@ function sanitizeHTML(html) {
             Array.from(node.childNodes).forEach(child => {
               const sanitizedChild = sanitizeNode(child);
               if (sanitizedChild) {
-                newSpan.appendChild(sanitizedChild);
+                newSpan.comendChild(sanitizedChild);
               }
             });
             return newSpan;
@@ -223,7 +226,7 @@ function sanitizeHTML(html) {
     Array.from(doc.body.childNodes).forEach(child => {
       const sanitizedChild = sanitizeNode(child);
       if (sanitizedChild) {
-        result.appendChild(sanitizedChild);
+        result.comendChild(sanitizedChild);
       }
     });
     
@@ -240,7 +243,7 @@ function sanitizeHTML(html) {
 // Função para trocar o idioma
 function changeLanguage(lang) {
   // 1. Salva a preferência do usuário no navegador
-  localStorage.setItem('autikids-language', lang);
+  localStorage.setItem('autkids-language', lang);
 
   // 2. Atualiza o título da página
   if (translations[lang] && translations[lang]['page_title']) {
@@ -268,6 +271,6 @@ function changeLanguage(lang) {
 
 // Ao carregar a página, verifica se já tem idioma salvo
 document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('autikids-language') || 'pt'; // Padrão PT
+  const savedLang = localStorage.getItem('autkids-language') || 'pt'; // Padrão PT
   changeLanguage(savedLang);
 });
