@@ -176,6 +176,7 @@ body {
 
 h1 {
   font-size: 2.5rem;
+  line-height: 3rem;
   color: var(--primary-yellow);
   text-align: center;
   margin-bottom: 10px;
@@ -200,6 +201,14 @@ h2 {
   color: var(--text-dark);
 }
 
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 p {
   color: var(--text-gray);
   text-align: justify;
@@ -209,6 +218,103 @@ p {
 p a {
   color: #b8860b;
   font-weight: 600;
+}
+
+/* ========================================
+   LISTAS
+======================================== */
+.policy-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.policy-list li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--text-gray);
+  margin-bottom: 10px;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.policy-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary-yellow);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.policy-list li a {
+  color: #b8860b;
+  font-weight: 600;
+}
+
+/* ========================================
+   TABELA — SEÇÃO 4
+======================================== */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(255, 195, 0, 0.2);
+  margin-top: 16px;
+}
+
+.data-purpose-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.data-purpose-table thead tr {
+  background: var(--primary-yellow);
+}
+
+.data-purpose-table thead th {
+  padding: 14px 20px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #212121;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: none;
+}
+
+.data-purpose-table tbody tr {
+  border-bottom: 1px solid #f5f0e0;
+  transition: background 0.2s ease;
+}
+
+.data-purpose-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.data-purpose-table tbody tr:nth-child(even) {
+  background: #fffdf4;
+}
+
+.data-purpose-table tbody tr:hover {
+  background: #fff8dc;
+}
+
+.data-purpose-table tbody td {
+  padding: 14px 20px;
+  color: var(--text-gray);
+  vertical-align: top;
+  border: none;
+}
+
+.data-purpose-table tbody td:first-child {
+  font-weight: 600;
+  color: var(--text-dark);
 }
 
 /* ========================================
@@ -241,6 +347,11 @@ p a {
 
   h1 {
     font-size: 2rem;
+  }
+
+  .data-purpose-table thead th,
+  .data-purpose-table tbody td {
+    padding: 12px 14px;
   }
 }
 
