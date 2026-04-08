@@ -18,7 +18,7 @@ const translations = {
     faq_a_create: "Basta baixar o app, tocar em 'Entrar com o Google' e pronto! Em poucos segundos você já pode começar.",
     faq_sec_support: "Suporte",
     faq_q_contact: "Como falar com o suporte?",
-    faq_a_contact: "Entre em contato pelo e-mail: <strong><a href='mailto:support@autkids.com'>support@autkids.com</a></strong> ou pelo Instagram <a href='https://www.instagram.com/autkids_' rel='noopener noreferrer' target='_blank'>@autkids_</a>",
+    faq_a_contact: "Entre em contato pelo e-mail: <strong><a href='mailto:suporte@autkids.com'>suporte@autkids.com</a></strong> ou pelo Instagram <a href='https://www.instagram.com/autkids_' rel='noopener noreferrer' target='_blank'>@autkids_</a>",
     faq_q_hours: "Qual o horário de atendimento?",
     faq_a_hours: "Nosso suporte funciona de segunda a sexta, das 8h às 18h (horário de Brasília).",
     footer_rights: `© ${currentYear} Autkids | Todos os direitos reservados`
@@ -40,7 +40,7 @@ const translations = {
     faq_a_create: "Just download the app, tap on 'Enter with Google', and you're done! In a few seconds, you can start!",
     faq_sec_support: "Support",
     faq_q_contact: "How to contact support?",
-    faq_a_contact: "Contact us via email: <strong><a href='mailto:support@autkids.com'>support@autkids.com</a></strong> or on Instagram <a href='https://www.instagram.com/autkids_' rel='noopener noreferrer' target='_blank'>@autkids_</a>",
+    faq_a_contact: "Contact us via email: <strong><a href='mailto:suporte@autkids.com'>suporte@autkids.com</a></strong> or on Instagram <a href='https://www.instagram.com/autkids_' rel='noopener noreferrer' target='_blank'>@autkids_</a>",
     faq_q_hours: "What are the support hours?",
     faq_a_hours: "Our support is available Monday to Friday, from 8 AM to 6 PM (Brasília time).",
     footer_rights: `© ${currentYear} Autkids | All rights reserved`
@@ -61,7 +61,7 @@ const translations = {
     faq_q_create: "¿Cómo crear una cuenta?",
     faq_a_create: "Simplemente descargue la app, toque en 'Entrar con Google' y ¡listo! En pocos segundos ya puede comenzar.",
     faq_q_contact: "¿Cómo contactar al soporte?",
-    faq_a_contact: "Contáctenos por correo: <strong><a href='mailto:support@autkids.com'>support@autkids.com</a></strong> o por nuestro Instagram <a href='https://www.instagram.com/autkids_' rel='noopener noreferrer' target='_blank'>@autkids_</a>",
+    faq_a_contact: "Contáctenos por correo: <strong><a href='mailto:suporte@autkids.com'>suporte@autkids.com</a></strong> o por nuestro Instagram <a href='https://www.instagram.com/autkids_' rel='noopener noreferrer' target='_blank'>@autkids_</a>",
     faq_q_hours: "¿Cuál es el horario de atención?",
     faq_a_hours: "Nuestro soporte funciona de lunes a viernes, de 8h a 18h (horario de Brasilia).",
     footer_rights: `© ${currentYear} Autkids | Todos los derechos reservados`
