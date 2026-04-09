@@ -22,7 +22,7 @@ const translations = {
     sec_2_li5: "<strong>Roadmap de Desenvolvimento:</strong> O Responsável entende que perguntas sobre os interesses da criança (ex: dinossauros, carros, música) visam alimentar o roteiro de desenvolvimento do aplicativo. Essas informações ajudam a equipe do Autkids a criar novos pacotes de cards e funcionalidades que façam sentido para a comunidade.",
     sec_2_li6: "<strong>Feedback e Pesquisa:</strong> Periodicamente, o Autkids poderá enviar questionários ao Responsável para coletar feedback sobre a facilidade de uso, percepção de melhora na comunicação e sugestões de novas funcionalidades. A participação é <strong>voluntária</strong>.",
     sec_2_li7: "<strong>Segurança (PIN):</strong> O Autkids possui uma área restrita de configurações protegida por um <strong>PIN de 4 dígitos</strong>, que deve ser de conhecimento exclusivo do Responsável para evitar que a criança altere configurações ou acesse áreas administrativas.",
-    sec_2_li8: "<strong>Serviços de Terceiros e Diagnósticos:</strong> Para garantir a segurança e estabilidade, o Autkids utiliza o <strong>Firebase Crashlytics</strong> para coletar relatórios de erros técnicos de forma anônima. A autenticação é realizada via <strong>Google Auth</strong>.",
+    sec_2_li8: "<strong>Serviços de Terceiros e Diagnósticos:</strong> Para garantir a segurança e estabilidade, o Autkids utiliza o <strong>Firebase Crashlytics</strong> para coletar relatórios de erros técnicos. A autenticação é realizada via <strong>Google Auth</strong>.",
 
     sec_3_title: "3. Natureza do Aplicativo (Aviso de Responsabilidade)",
     sec_3_li1: "<strong>Ferramenta de Apoio:</strong> O Autkids é uma ferramenta de suporte à comunicação e <strong>não substitui</strong> diagnósticos, tratamentos médicos, terapias ocupacionais ou acompanhamento fonoaudiológico.",
@@ -41,7 +41,7 @@ const translations = {
 
     sec_6_title: "6. Planos, Assinaturas e Publicidade",
     sec_6_intro: "O Autkids opera sob um modelo <strong>Freemium</strong> (Gratuito com opções de Upgrade):",
-    sec_6_li1: "<strong>Plano Gratuito:</strong> Permite a criação de até <strong>5 cards personalizados</strong>, disponibiliza 2 opções de vozes via IA para comandos básicos e poderá exibir <strong>publicidade (anúncios)</strong> em áreas que não interfiram diretamente na segurança sensorial da criança.",
+    sec_6_li1: "<strong>Plano Gratuito:</strong> Permite a criação de até <strong>5 cards personalizados, 1 seção personalizada e 1 subseção personalizada</strong> e contém <strong>publicidade (anúncios)</strong> em áreas que não interfiram diretamente na segurança sensorial da criança.",
     sec_6_li2: "<strong>Planos Premium (Pagos):</strong> Oferecem limites expandidos ou ilimitados para criação de cards, maior variedade de vozes via IA e <strong>isenção de anúncios publicitários</strong>. Os valores e benefícios específicos serão detalhados na tela de <strong>\"Benefícios Premium\"</strong> no momento da contratação.",
     sec_6_li3: "<strong>Publicidade (Plano Gratuito):</strong> Os anúncios exibidos no plano gratuito são gerenciados pelo <strong>Google AdMob</strong>. O Responsável entende que o provedor de anúncios pode coletar identificadores anônimos do dispositivo para fins de exibição de publicidade, respeitando as políticas de privacidade para conteúdo infantil.",
     sec_6_li4: "<strong>Processamento de Pagamento:</strong> O pagamento dos planos premium é processado pela <strong>Apple Pay</strong> ou <strong>Google Pay</strong>. O cancelamento deve seguir as regras das respectivas plataformas.",
@@ -58,11 +58,9 @@ const translations = {
     sec_9_li2: "Uso indevido do aplicativo por terceiros devido ao compartilhamento do <strong>PIN</strong> ou da senha.",
     sec_9_li3: "Danos ao dispositivo móvel decorrentes do uso por parte da criança.",
 
-    sec_10_title: "10. Assinaturas e Benefícios Premium",
-    sec_10_text: "Caso o Responsável opte pelo plano <strong>\"Benefícios Premium\"</strong>, o pagamento será processado pela <strong>Apple Pay</strong> ou <strong>Google Pay</strong>. O cancelamento deve seguir as regras das respectivas plataformas.",
 
-    sec_11_title: "11. Alterações nos Termos",
-    sec_11_text: "Reservamo-nos o direito de <strong>atualizar estes termos periodicamente</strong>. O uso continuado do app após alterações constitui aceitação dos novos termos.",
+    sec_10_title: "10. Alterações nos Termos",
+    sec_10_text: "Reservamo-nos o direito de <strong>atualizar estes termos periodicamente</strong>. O uso continuado do app após alterações constitui aceitação dos novos termos.",
 
     footer_rights: `© ${currentYear} Autkids | CNPJ: 65.388.377/0001-00. Todos os direitos reservados`
   },
@@ -88,7 +86,7 @@ const translations = {
     sec_2_li5: "<strong>Development Roadmap:</strong> The Guardian understands that questions about the child's interests (e.g., dinosaurs, cars, music) aim to feed the app's development roadmap. This information helps the Autkids team create new card packs and features meaningful to the community.",
     sec_2_li6: "<strong>Feedback and Research:</strong> Periodically, Autkids may send questionnaires to the Guardian to collect feedback on ease of use, perceived improvement in communication, and suggestions for new features. Participation is <strong>voluntary</strong>.",
     sec_2_li7: "<strong>Security (PIN):</strong> Autkids has a restricted settings area protected by a <strong>4-digit PIN</strong>, which must be known exclusively by the Guardian to prevent the child from changing settings or accessing administrative areas.",
-    sec_2_li8: "<strong>Third-Party Services and Diagnostics:</strong> To ensure security and stability, Autkids uses <strong>Firebase Crashlytics</strong> to anonymously collect technical error reports. Authentication is performed via <strong>Google Auth</strong>.",
+    sec_2_li8: "<strong>Third-Party Services and Diagnostics:</strong> To ensure security and stability, Autkids uses <strong>Firebase Crashlytics</strong> to collect technical error reports. Authentication is performed via <strong>Google Auth</strong>.",
 
     sec_3_title: "3. Nature of the App (Disclaimer)",
     sec_3_li1: "<strong>Support Tool:</strong> Autkids is a communication support tool and <strong>does not replace</strong> medical diagnoses, treatments, occupational therapy, or speech therapy.",
@@ -107,7 +105,7 @@ const translations = {
 
     sec_6_title: "6. Plans, Subscriptions and Advertising",
     sec_6_intro: "Autkids operates under a <strong>Freemium</strong> model (Free with Upgrade options):",
-    sec_6_li1: "<strong>Free Plan:</strong> Allows the creation of up to <strong>5 custom cards</strong>, provides 2 AI voice options for basic commands, and may display <strong>advertising (ads)</strong> in areas that do not directly interfere with the child's sensory safety.",
+    sec_6_li1: "<strong>Free Plan:</strong> Allows the creation of up to <strong>5 custom cards, 1 custom section, and 1 custom subsection</strong> and may contain <strong>advertising (ads)</strong> in areas that do not directly interfere with the child's sensory safety.",
     sec_6_li2: "<strong>Premium Plans (Paid):</strong> Offer expanded or unlimited limits for card creation, greater variety of AI voices, and <strong>ad-free experience</strong>. Specific values and benefits will be detailed on the <strong>\"Premium Benefits\"</strong> screen at the time of purchase.",
     sec_6_li3: "<strong>Advertising (Free Plan):</strong> Ads displayed on the free plan are managed by <strong>Google AdMob</strong>. The Guardian understands that the ad provider may collect anonymous device identifiers for advertising purposes, in compliance with privacy policies for child and family-directed content.",
     sec_6_li4: "<strong>Payment Processing:</strong> Premium plan payments are processed by <strong>Apple Pay</strong> or <strong>Google Pay</strong>. Cancellation must follow the rules of the respective platforms.",
@@ -124,11 +122,9 @@ const translations = {
     sec_9_li2: "Misuse of the app by third parties due to sharing of the <strong>PIN</strong> or password.",
     sec_9_li3: "Damage to the mobile device resulting from use by the child.",
 
-    sec_10_title: "10. Subscriptions and Premium Benefits",
-    sec_10_text: "If the Guardian opts for the <strong>\"Premium Benefits\"</strong> plan, payment will be processed by <strong>Apple Pay</strong> or <strong>Google Pay</strong>. Cancellation must follow the rules of the respective platforms.",
 
-    sec_11_title: "11. Changes to the Terms",
-    sec_11_text: "We reserve the right to <strong>update these terms periodically</strong>. Continued use of the app after changes constitutes acceptance of the new terms.",
+    sec_10_title: "10. Changes to the Terms",
+    sec_10_text: "We reserve the right to <strong>update these terms periodically</strong>. Continued use of the app after changes constitutes acceptance of the new terms.",
 
     footer_rights: `© ${currentYear} Autkids | CNPJ: 65.388.377/0001-00. All rights reserved`
   },
@@ -154,7 +150,7 @@ const translations = {
     sec_2_li5: "<strong>Hoja de Ruta de Desarrollo:</strong> El Responsable entiende que las preguntas sobre los intereses del niño (ej: dinosaurios, coches, música) tienen como objetivo alimentar la hoja de ruta de desarrollo de la aplicación. Esta información ayuda al equipo de Autkids a crear nuevos paquetes de tarjetas y funcionalidades significativas para la comunidad.",
     sec_2_li6: "<strong>Retroalimentación e Investigación:</strong> Periódicamente, Autkids podrá enviar cuestionarios al Responsable para recopilar comentarios sobre la facilidad de uso, percepción de mejora en la comunicación y sugerencias de nuevas funcionalidades. La participación es <strong>voluntaria</strong>.",
     sec_2_li7: "<strong>Seguridad (PIN):</strong> Autkids tiene un área de configuración restringida protegida por un <strong>PIN de 4 dígitos</strong>, que debe ser de conocimiento exclusivo del Responsable para evitar que el niño cambie configuraciones o acceda a áreas administrativas.",
-    sec_2_li8: "<strong>Servicios de Terceros y Diagnósticos:</strong> Para garantizar la seguridad y estabilidad, Autkids utiliza <strong>Firebase Crashlytics</strong> para recopilar informes de errores técnicos de forma anónima. La autenticación se realiza mediante <strong>Google Auth</strong>.",
+    sec_2_li8: "<strong>Servicios de Terceros y Diagnósticos:</strong> Para garantizar la seguridad y estabilidad, Autkids utiliza <strong>Firebase Crashlytics</strong> para recopilar informes de errores técnicos. La autenticación se realiza mediante <strong>Google Auth</strong>.",
 
     sec_3_title: "3. Naturaleza de la Aplicación (Aviso de Responsabilidad)",
     sec_3_li1: "<strong>Herramienta de Apoyo:</strong> Autkids es una herramienta de apoyo a la comunicación y <strong>no reemplaza</strong> diagnósticos médicos, tratamientos, terapias ocupacionales ni seguimiento fonoaudiológico.",
@@ -173,7 +169,7 @@ const translations = {
 
     sec_6_title: "6. Planes, Suscripciones y Publicidad",
     sec_6_intro: "Autkids opera bajo un modelo <strong>Freemium</strong> (Gratuito con opciones de actualización):",
-    sec_6_li1: "<strong>Plan Gratuito:</strong> Permite la creación de hasta <strong>5 tarjetas personalizadas</strong>, proporciona 2 opciones de voces mediante IA para comandos básicos y podrá mostrar <strong>publicidad (anuncios)</strong> en zonas que no interfieran directamente con la seguridad sensorial del niño.",
+    sec_6_li1: "<strong>Plan Gratuito:</strong> Permite la creación de hasta <strong>5 tarjetas personalizadas, 1 sección personalizada y 1 subsección personalizada</strong> y puede contener <strong>publicidad (anuncios)</strong> en áreas que no interfieran directamente con la seguridad sensorial del niño.",
     sec_6_li2: "<strong>Planes Premium (De pago):</strong> Ofrecen límites ampliados o ilimitados para la creación de tarjetas, mayor variedad de voces mediante IA y <strong>exención de anuncios publicitarios</strong>. Los valores y beneficios específicos de cada plan serán detallados en la pantalla de <strong>\"Beneficios Premium\"</strong> en el momento de la contratación.",
     sec_6_li3: "<strong>Publicidad (Plan Gratuito):</strong> Los anuncios mostrados en el plan gratuito son gestionados por <strong>Google AdMob</strong>. El Responsable entiende que el proveedor de anuncios puede recopilar identificadores anónimos del dispositivo con fines publicitarios, respetando las políticas de privacidad para contenido infantil.",
     sec_6_li4: "<strong>Procesamiento de Pagos:</strong> El pago de los planes premium es procesado por <strong>Apple Pay</strong> o <strong>Google Pay</strong>. La cancelación debe seguir las reglas de las respectivas plataformas.",
@@ -190,11 +186,9 @@ const translations = {
     sec_9_li2: "Uso indebido de la aplicación por terceros debido a la divulgación del <strong>PIN</strong> o la contraseña.",
     sec_9_li3: "Daños al dispositivo móvil derivados del uso por parte del niño.",
 
-    sec_10_title: "10. Suscripciones y Beneficios Premium",
-    sec_10_text: "Si el Responsable opta por el plan <strong>\"Beneficios Premium\"</strong>, el pago será procesado por <strong>Apple Pay</strong> o <strong>Google Pay</strong>. La cancelación debe seguir las reglas de las respectivas plataformas.",
-
-    sec_11_title: "11. Cambios en los Términos",
-    sec_11_text: "Nos reservamos el derecho de <strong>actualizar estos términos periódicamente</strong>. El uso continuado de la app tras los cambios constituye la aceptación de los nuevos términos.",
+  
+    sec_10_title: "10. Cambios en los Términos",
+    sec_10_text: "Nos reservamos el derecho de <strong>actualizar estos términos periódicamente</strong>. El uso continuado de la app tras los cambios constituye la aceptación de los nuevos términos.",
 
     footer_rights: `© ${currentYear} Autkids | CNPJ: 65.388.377/0001-00. Todos los derechos reservados`
   }
