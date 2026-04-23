@@ -112,7 +112,7 @@ body {
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.3s ease;
-  min-width: 280px;
+  min-width: 360px;
   z-index: 1001;
 }
 
@@ -161,6 +161,10 @@ body {
   border-radius: 4px;
   object-fit: cover;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.language-option span {
+  white-space: nowrap;
 }
 
 /* ========================================
@@ -301,8 +305,9 @@ body {
   }
 
   .language-dropdown {
-    min-width: 240px;
-    max-width: calc(100vw - 40px);
+    min-width: 300px;
+    max-width: calc(100vw - 24px);
+    right: 0;
   }
 
   .faq-question {

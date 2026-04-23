@@ -21,7 +21,7 @@ const translations = {
     faq_a_contact: "Entre em contato pelo e-mail: <strong><a href='mailto:suporte@autkids.com'>suporte@autkids.com</a></strong> ou pelo Instagram <a href='https://www.instagram.com/autkids_' rel='noopener noreferrer' target='_blank'>@autkids_</a>",
     faq_q_hours: "Qual o horário de atendimento?",
     faq_a_hours: "Nosso suporte funciona de segunda a sexta, das 8h às 18h (horário de Brasília).",
-    footer_rights: `© ${currentYear} Autkids | Todos os direitos reservados`
+    footer_rights: `© ${currentYear} Autkids | CNPJ: 65.388.377/0001-00. Todos os direitos reservados`
   },
   en: {
     page_title: "Autkids | Help Center",
@@ -43,7 +43,7 @@ const translations = {
     faq_a_contact: "Contact us via email: <strong><a href='mailto:suporte@autkids.com'>suporte@autkids.com</a></strong> or on Instagram <a href='https://www.instagram.com/autkids_' rel='noopener noreferrer' target='_blank'>@autkids_</a>",
     faq_q_hours: "What are the support hours?",
     faq_a_hours: "Our support is available Monday to Friday, from 8 AM to 6 PM (Brasília time).",
-    footer_rights: `© ${currentYear} Autkids | All rights reserved`
+    footer_rights: `© ${currentYear} Autkids | CNPJ: 65.388.377/0001-00. Todos os direitos reservados`
   },
   es: {
     page_title: "Autkids | Centro de Ayuda",
@@ -64,7 +64,7 @@ const translations = {
     faq_a_contact: "Contáctenos por correo: <strong><a href='mailto:suporte@autkids.com'>suporte@autkids.com</a></strong> o por nuestro Instagram <a href='https://www.instagram.com/autkids_' rel='noopener noreferrer' target='_blank'>@autkids_</a>",
     faq_q_hours: "¿Cuál es el horario de atención?",
     faq_a_hours: "Nuestro soporte funciona de lunes a viernes, de 8h a 18h (horario de Brasilia).",
-    footer_rights: `© ${currentYear} Autkids | Todos los derechos reservados`
+    footer_rights: `© ${currentYear} Autkids | CNPJ: 65.388.377/0001-00. Todos los derechos reservados`
   }
 };
 

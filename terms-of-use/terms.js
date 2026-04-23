@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
 
   /* ============================================================
       1. CARREGAR IDIOMA SALVO
@@ -25,16 +25,31 @@ document.addEventListener('DOMContentLoaded', () => {
   if (langTrigger && langDropdown) {
 
     const languages = {
-      pt: { name: 'Português', flag: '../assets/brasil.png'  },
-      en: { name: 'English',   flag: '../assets/eua.png'     },
-      es: { name: 'Español',   flag: '../assets/espanha.png' }
+      pt: { name: 'Português', flag: '../assets/bandeiras/brasil.png'  },
+      en: { name: 'English',   flag: '../assets/bandeiras/eua.png'     },
+      es: { name: 'Español',   flag: '../assets/bandeiras/espanha.png' }
+    };
+
+    const languageLabels = {
+      pt: { pt: 'Português', en: 'Inglês', es: 'Espanhol' },
+      en: { pt: 'Portuguese', en: 'English', es: 'Spanish' },
+      es: { pt: 'Portugués', en: 'Inglés', es: 'Español' }
     };
 
     function applyLanguage(lang) {
       if (!languages[lang]) return;
 
       currentFlag.src = languages[lang].flag;
-      currentLang.textContent = languages[lang].name;
+      currentLang.textContent = languageLabels[lang][lang];
+
+      languageOptions.forEach(opt => {
+        const optionLang = opt.dataset.lang;
+        const optionLabel = languageLabels[lang][optionLang];
+        const labelElement = opt.querySelector('span');
+        if (labelElement && optionLabel) {
+          labelElement.textContent = optionLabel;
+        }
+      });
 
       languageOptions.forEach(opt => {
         opt.classList.toggle('active', opt.dataset.lang === lang);
@@ -74,3 +89,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+

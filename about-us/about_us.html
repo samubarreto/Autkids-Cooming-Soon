@@ -1,0 +1,287 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="Conheça a história do Autikids." />
+	<meta name="theme-color" content="#FFC107" />
+	<title>Autkids | Sobre Nós</title>
+	<link rel="icon" href="../assets/favicon.png" type="image/png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="styles_about.css" />
+</head>
+
+<body>
+	<header class="top-flags">
+		<div class="language-selector">
+			<a href="../index.html" class="back-btn">
+				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M19 12H5M12 19l-7-7 7-7"/>
+				</svg>
+				<span data-i18n="btn_back">Voltar</span>
+			</a>
+
+			<div class="language-wrapper">
+				<button class="language-trigger" id="langTrigger">
+					<img id="currentFlag" src="../assets/bandeiras/brasil.png" alt="Idioma atual" />
+					<span id="currentLang">Português</span>
+					<svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+						<path d="M4.5 6L8 9.5L11.5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+					</svg>
+				</button>
+
+				<div class="language-dropdown" id="langDropdown">
+					<div class="language-grid">
+						<button class="language-option" data-lang="pt" data-name="Português">
+							<img src="../assets/bandeiras/brasil.png" alt="Brasil" />
+							<span>Português</span>
+						</button>
+						<button class="language-option" data-lang="en" data-name="Inglês">
+							<img src="../assets/bandeiras/eua.png" alt="Estados Unidos" />
+							<span>English</span>
+						</button>
+						<button class="language-option" data-lang="es" data-name="Espanhol">
+							<img src="../assets/bandeiras/espanha.png" alt="Espanha" />
+							<span>Espanol</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="about-hero reveal">
+			<div class="hero-inner">
+				<img src="../assets/Lp_inicial/LogoAutkids.png" alt="Logo Autkids" class="hero-logo" />
+				<h1 data-i18n="hero_title"></h1>
+				<p data-i18n="hero_subtitle"></p>
+				<div class="hero-line"></div>
+			</div>
+		</section>
+
+		<section class="mission reveal">
+			<div class="mission-content mission-content--main">
+				<div class="mission-icon-wrap">
+					<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+						<path d="M12 3l2.9 5.88 6.5.95-4.7 4.58 1.1 6.48L12 17.8l-5.8 3.09 1.1-6.48L2.6 9.83l6.5-.95L12 3z"/>
+					</svg>
+				</div>
+				<h2 data-i18n="mission_title"></h2>
+				<p data-i18n="mission_p1"></p>
+				<p data-i18n="mission_p2"></p>
+			</div>
+
+			
+		</section>
+
+		<section class="timeline reveal">
+			<h2 data-i18n="timeline_title"></h2>
+			<div class="timeline-rows">
+				<article class="timeline-row left">
+					<div class="timeline-content">
+						<span class="timeline-badge" data-i18n="tl_1_badge"></span>
+						<h3 data-i18n="tl_1_title"></h3>
+						<p data-i18n="tl_1_desc"></p>
+					</div>
+					<div class="timeline-media timeline-media-carousel" data-carousel>
+						<div class="timeline-media-track">
+							<a class="timeline-media-slide is-active" href="https://www.visaonoticias.com/noticia/projeto-de-academicos-do-univem-transforma-a-comunicacao-para-criancas-no-espectro-autista-57443" target="_blank" rel="noopener noreferrer" aria-label="Abrir mat�ria no Vis�o Not�cias">
+								<img src="../assets/sobre/inicio_integrantes.jpeg" alt="Equipe Autkids" />
+							</a>
+							<a class="timeline-media-slide" href="https://www.visaonoticias.com/noticia/projeto-de-academicos-do-univem-transforma-a-comunicacao-para-criancas-no-espectro-autista-57443"" target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil do Autkids no Instagram">
+								<img src="../assets/sobre/autkids_desktop.jpeg" alt="Autkids Desktop" />
+							</a>
+						</div>
+						<div class="timeline-carousel-dots" role="tablist" aria-label="Selecionar imagem">
+							<button class="timeline-carousel-dot is-active" type="button" aria-label="Ir para imagem 1"></button>
+							<button class="timeline-carousel-dot" type="button" aria-label="Ir para imagem 2"></button>
+						</div>
+					</div>
+					<span class="timeline-dot" aria-hidden="true"></span>
+				</article>
+
+				<article class="timeline-row right">
+					<div class="timeline-content">
+						<span class="timeline-badge" data-i18n="tl_2_badge"></span>
+						<h3 data-i18n="tl_2_title"></h3>
+						<p data-i18n="tl_2_desc"></p>
+					</div>
+					<div class="timeline-media timeline-media-carousel" data-carousel>
+						<div class="timeline-media-track">
+							<a class="timeline-media-slide is-active" href="https://www.instagram.com/p/DVdzrLdEY96/?igsh=d29vaHQ0dHkyZWR4" target="_blank" rel="noopener noreferrer" aria-label="Abrir publica��o da visita ao Espa�o Potencial">
+								<img src="../assets/sobre/visita_espaco_potencial.jpeg" alt="Visita ao Espaco Potencial" />
+							</a>
+							<a class="timeline-media-slide" href="https://www.youtube.com/@Autkids01" target="_blank" rel="noopener noreferrer" aria-label="Abrir canal do Autkids no YouTube">
+								<img src="../assets/sobre/integrantes.jpg" alt="Integrantes durante atividade" />
+							</a>
+						</div>
+						<div class="timeline-carousel-dots" role="tablist" aria-label="Selecionar imagem">
+							<button class="timeline-carousel-dot is-active" type="button" aria-label="Ir para imagem 1"></button>
+							<button class="timeline-carousel-dot" type="button" aria-label="Ir para imagem 2"></button>
+						</div>
+					</div>
+					<span class="timeline-dot" aria-hidden="true"></span>
+				</article>
+
+				<article class="timeline-row left">
+					<div class="timeline-content">
+						<span class="timeline-badge" data-i18n="tl_3_badge"></span>
+						<h3 data-i18n="tl_3_title"></h3>
+						<p data-i18n="tl_3_desc"></p>
+					</div>
+					<div class="timeline-media timeline-media-carousel" data-carousel>
+						<div class="timeline-media-track">
+							<a class="timeline-media-slide is-active" href="https://revista.univem.edu.br/REGRAD/article/view/3767" target="_blank" rel="noopener noreferrer" aria-label="Abrir publicação cientifica na REGRAD">
+								<img src="../assets/sobre/regrad.png" alt="Reconhecimento academico" />
+							</a>
+						</div>
+						<div class="timeline-carousel-dots" role="tablist" aria-label="Selecionar imagem">
+							<button class="timeline-carousel-dot is-active" type="button" aria-label="Ir para imagem 1"></button>
+							<button class="timeline-carousel-dot" type="button" aria-label="Ir para imagem 2"></button>
+						</div>
+					</div>
+					<span class="timeline-dot" aria-hidden="true"></span>
+				</article>
+
+				<article class="timeline-row right">
+					<div class="timeline-content">
+						<span class="timeline-badge" data-i18n="tl_4_badge"></span>
+						<h3 data-i18n="tl_4_title"></h3>
+						<p data-i18n="tl_4_desc"></p>
+					</div>
+					<div class="timeline-media timeline-media-carousel" data-carousel>
+						<div class="timeline-media-track">
+							<a class="timeline-media-slide is-active" href="https://www.youtube.com/@Autkids01" target="_blank" rel="noopener noreferrer" aria-label="Abrir canal do Autkids no YouTube">
+								<img src="../assets/sobre/certificado_univem.jpeg" alt="Certificado conquistado" />
+							</a>
+							<a class="timeline-media-slide" href="https://revista.univem.edu.br/REGRAD/article/view/3767" target="_blank" rel="noopener noreferrer" aria-label="Abrir publicação cientifica na REGRAD">
+								<img src="../assets/sobre/integrantes.jpg" alt="Reconhecimento do projeto" />
+							</a>
+						</div>
+						<div class="timeline-carousel-dots" role="tablist" aria-label="Selecionar imagem">
+							<button class="timeline-carousel-dot is-active" type="button" aria-label="Ir para imagem 1"></button>
+							<button class="timeline-carousel-dot" type="button" aria-label="Ir para imagem 2"></button>
+						</div>
+					</div>
+					<span class="timeline-dot" aria-hidden="true"></span>
+				</article>
+
+				<article class="timeline-row left">
+					<div class="timeline-content">
+						<span class="timeline-badge" data-i18n="tl_5_badge"></span>
+						<h3 data-i18n="tl_5_title"></h3>
+						<p data-i18n="tl_5_desc"></p>
+					</div>
+					<div class="timeline-media timeline-media-carousel" data-carousel>
+						<div class="timeline-media-track">
+							<a class="timeline-media-slide is-active" href="" target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil do Autkids no Instagram">
+								<img src="" alt="" />
+							</a>
+							<a class="timeline-media-slide" href="" target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil do Autkids no TikTok">
+								<img src="" alt="s" />
+							</a>
+						</div>
+						<div class="timeline-carousel-dots" role="tablist" aria-label="Selecionar imagem">
+							<button class="timeline-carousel-dot is-active" type="button" aria-label="Ir para imagem 1"></button>
+							<button class="timeline-carousel-dot" type="button" aria-label="Ir para imagem 2"></button>
+						</div>
+					</div>
+					<span class="timeline-dot" aria-hidden="true"></span>
+				</article>
+
+				<article class="timeline-row right">
+					<div class="timeline-content">
+						<span class="timeline-badge" data-i18n="tl_6_badge"></span>
+						<h3 data-i18n="tl_6_title"></h3>
+						<p data-i18n="tl_6_desc"></p>
+					</div>
+					<div class="timeline-media timeline-media-carousel" data-carousel>
+						<div class="timeline-media-track">
+							<a class="timeline-media-slide is-active" href="" aria-label="Ir para seção de lançamento na página inicial">
+								<img src="" alt="Lançamento" />
+							</a>
+							<a class="timeline-media-slide" href="https://www.linkedin.com/company/autkids/" target="_blank" rel="noopener noreferrer" aria-label="Abrir página da Autkids no LinkedIn">
+								<img src="" alt="Personagem para o lançamento" />
+							</a>
+						</div>
+						<div class="timeline-carousel-dots" role="tablist" aria-label="Selecionar imagem">
+							<button class="timeline-carousel-dot is-active" type="button" aria-label="Ir para imagem 1"></button>
+							<button class="timeline-carousel-dot" type="button" aria-label="Ir para imagem 2"></button>
+						</div>
+					</div>
+					<span class="timeline-dot" aria-hidden="true"></span>
+				</article>
+			</div>
+		</section>
+
+		<section class="values reveal">
+			<h2 data-i18n="values_title"></h2>
+			<p class="values-subtitle" data-i18n="values_subtitle"></p>
+
+			<div class="values-grid">
+				<article class="value-card">
+					<div class="value-icon">01</div>
+					<h3 data-i18n="value_1_title"></h3>
+					<p data-i18n="value_1_desc"></p>
+				</article>
+				<article class="value-card">
+					<div class="value-icon">02</div>
+					<h3 data-i18n="value_2_title"></h3>
+					<p data-i18n="value_2_desc"></p>
+				</article>
+				<article class="value-card">
+					<div class="value-icon">03</div>
+					<h3 data-i18n="value_3_title"></h3>
+					<p data-i18n="value_3_desc"></p>
+				</article>
+			</div>
+		</section>
+
+		<section class="team reveal">
+			<h2 data-i18n="team_title"></h2>
+			<p class="team-subtitle" data-i18n="team_subtitle"></p>
+
+			<div class="team-list">
+				<article class="member">
+					<div class="member-photo"><img src="../assets/sobre/andrei.jpg" alt="Andrei Santos de Oliveira" /></div>
+					<h3>Andrei Santos de Oliveira</h3>
+					<p data-i18n="team_role_dev"></p>
+				</article>
+				<article class="member">
+					<div class="member-photo"><img src="../assets/sobre/bruno.jpg" alt="Bruno Marques Freitas" /></div>
+					<h3>Bruno Marques Freitas</h3>
+					<p data-i18n="team_role_dev"></p>
+				</article>
+				<article class="member">
+					<div class="member-photo"><img src="../assets/sobre/caio.jpg" alt="Caio Issao Fujisawa" /></div>
+					<h3>Caio Issao Fujisawa</h3>
+					<p data-i18n="team_role_dev"></p>
+				</article>
+				<article class="member">
+					<div class="member-photo"><img src="../assets/sobre/lucas.jpg" alt="Lucas Leite Konda" /></div>
+					<h3>Lucas Konda</h3>
+					<p data-i18n="team_role_dev"></p>
+				</article>
+				<article class="member">
+					<div class="member-photo"><img src="../assets/sobre/samuel.jpg" alt="Samuel Pereira Barreto" /></div>
+					<h3>Samuel Pereira Barreto</h3>
+					<p data-i18n="team_role_dev"></p>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer class="privacy-footer">
+		<p data-i18n="footer_rights"></p>
+	</footer>
+
+	<script src="translations_about.js"></script>
+	<script src="about.js"></script>
+</body>
+</html>
+
+
+
